@@ -1,0 +1,59 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif
+}
+
+/* .side-box {
+            height: ;
+        } */
+
+.photo-name {
+    display: inline-flex;
+    margin-top: 25px;
+}
+
+.photo-name>img {
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    width: 97px;
+    height: 113px;
+}
+
+.photo-name>h2 {
+    padding-left: 16px;
+    margin-top: -10px !important;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.skills-label {
+    margin-bottom: 0px !important;
+}
+
+.skills>h5 {
+    grid-column: span 2;
+    text-decoration: underline;
+    margin-top: 10px !important;
+}
+
+.label {
+    text-decoration: underline;
+    font-size: 17px;
+    padding-right: 10px;
+}
+
+.languages>p {
+    margin: 0px;
+    padding-bottom: 15px;
+}
