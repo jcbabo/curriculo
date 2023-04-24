@@ -7,21 +7,25 @@ h4,
 h5,
 h6,
 p {
-    font-family: "Roboto", sans-serif;
-    color: #757575;
+    font-family: "Roboto", sans-serif !important;
+    color: #565656;
+    font-weight: 400 !important;
 }
 
-p {
-    font-weight: 700;
+html,
+body,
+section {
+    background-color: #D7CEC7;
+    border-radius: 5px;
 }
 
 footer {
-    height: auto;
+    background-color: #76323f;
 }
-/* 
-hr {
 
-} */
+i {
+    color: #c09f80 !important;
+}
 
 .photo-name {
     display: inline-flex;
@@ -29,7 +33,7 @@ hr {
 }
 
 .photo-name>img {
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px #565656;
     border-radius: 5px;
     width: 97px;
     height: 113px;
@@ -90,6 +94,20 @@ hr {
 }
 
 .card-overflow {
-    max-height: 19em;
+    max-height: 25em;
     overflow: auto;
+}
+
+.tag {
+    background-color: #c09f80 !important;
+}
+
+@media (min-width: 1024px) {
+    .side-box {
+        height: 1146px;
+    }
+
+    .card-overflow {
+        max-height: 20em;
+    }
 }
