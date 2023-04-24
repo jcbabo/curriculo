@@ -5,13 +5,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Roboto", sans-serif
+h6,
+p {
+    font-family: "Roboto", sans-serif;
+    color: #757575;
 }
 
-/* .side-box {
-            height: ;
-        } */
+p {
+    font-weight: 700;
+}
 
 .photo-name {
     display: inline-flex;
@@ -23,11 +25,17 @@ h6 {
     border-radius: 5px;
     width: 97px;
     height: 113px;
+    margin-bottom: 15px;
 }
 
 .photo-name>h2 {
     padding-left: 16px;
     margin-top: -10px !important;
+}
+
+.badge {
+    width: 3em;
+    height: 4em;
 }
 
 .skills {
@@ -44,7 +52,7 @@ h6 {
 .skills>h5 {
     grid-column: span 2;
     text-decoration: underline;
-    margin-top: 10px !important;
+    margin-top: 2em !important;
 }
 
 .label {
@@ -53,7 +61,15 @@ h6 {
     padding-right: 10px;
 }
 
+.languages {
+    margin-top: 2em;
+}
+
 .languages>p {
     margin: 0px;
     padding-bottom: 15px;
+}
+
+footer {
+    height: auto;
 }
