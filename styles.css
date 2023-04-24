@@ -15,6 +15,14 @@ p {
     font-weight: 700;
 }
 
+footer {
+    height: auto;
+}
+/* 
+hr {
+
+} */
+
 .photo-name {
     display: inline-flex;
     margin-top: 25px;
@@ -40,29 +48,40 @@ p {
 
 .skills {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    column-gap: 0.5em;
 }
 
-.skills-label {
+.skills-title {
     margin-bottom: 0px !important;
 }
 
-.skills>h5 {
+.skill-label {
     grid-column: span 2;
+}
+
+.skills>h5 {
+    grid-column: span 6;
     text-decoration: underline;
     margin-top: 2em !important;
+}
+
+.languages {
+    margin-top: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+
 }
 
 .label {
     text-decoration: underline;
     font-size: 17px;
     padding-right: 10px;
+    grid-column: 1/1;
 }
 
-.languages {
-    margin-top: 2em;
+.content {
+    grid-column: span 3;
 }
 
 .languages>p {
@@ -70,6 +89,7 @@ p {
     padding-bottom: 15px;
 }
 
-footer {
-    height: auto;
+.card-overflow {
+    max-height: 19em;
+    overflow: auto;
 }
